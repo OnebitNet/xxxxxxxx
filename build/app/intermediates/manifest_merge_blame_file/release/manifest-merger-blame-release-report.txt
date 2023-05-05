@@ -1,0 +1,493 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.onebitnet.onebitnet"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="33" />
+9-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+11-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:5:5-81
+11-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:5:22-78
+12    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+12-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:6:5-80
+12-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:6:22-77
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:7:5-66
+13-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:7:22-64
+14    <uses-permission android:name="android.permission.WAKE_LOCK" />
+14-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-68
+14-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-65
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Permissions options for the `notification` group -->
+15-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-79
+15-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-76
+16    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+16-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:5-77
+16-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:13:22-74
+17
+18    <queries>
+18-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-17:15
+19        <intent>
+19-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:12:9-16:18
+20            <action android:name="android.intent.action.GET_CONTENT" />
+20-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-72
+20-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:13:21-69
+21
+22            <data android:mimeType="*/*" />
+22-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-44
+22-->[:file_picker] D:\OneBitNet\build\file_picker\intermediates\merged_manifest\release\AndroidManifest.xml:15:19-41
+23        </intent>
+24        <intent>
+24-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:25:9-27:18
+25            <action android:name="android.media.browse.MediaBrowserService" />
+25-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:13-79
+25-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:26:21-76
+26        </intent>
+27        <intent>
+27-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:28:9-30:18
+28            <action android:name="androidx.media2.session.MediaSessionService" />
+28-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:13-82
+28-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:29:21-79
+29        </intent>
+30        <intent>
+30-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:31:9-33:18
+31            <action android:name="androidx.media2.session.MediaLibraryService" />
+31-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:13-82
+31-->[androidx.media2:media2-session:1.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a21c64fcd24a8650956ec1fa3b7d7972\transformed\jetified-media2-session-1.2.0\AndroidManifest.xml:32:21-79
+32        </intent>
+33    </queries>
+34
+35    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+35-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:5-81
+35-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:9:22-78
+36    <uses-permission android:name="android.permission.VIBRATE" />
+36-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:5-66
+36-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:10:22-63
+37    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+37-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:5-81
+37-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:11:22-78
+38    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+38-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:5-79
+38-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:12:22-76
+39    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+39-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:28:5-82
+39-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:28:22-79
+40    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\98f6687537bbe22bf019b907833551a3\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:5-79
+40-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\98f6687537bbe22bf019b907833551a3\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:25:22-76
+41    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+41-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:5-110
+41-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:26:22-107
+42
+43    <application
+44        android:name="android.app.Application"
+44-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:12:9-42
+45        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+45-->[androidx.core:core:1.8.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ed3eb8870bfbe8771f3793fc56809c4d\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+46        android:icon="@mipmap/ic_launcher"
+46-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:13:9-43
+47        android:label="OneBitNet"
+47-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:11:9-34
+48        android:requestLegacyExternalStorage="true"
+48-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:14:8-51
+49        android:usesCleartextTraffic="true" >
+49-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:10:8-43
+50        <activity
+50-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:16:9-48:20
+51            android:name="com.onebitnet.onebitnet.MainActivity"
+51-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:17:13-41
+52            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+52-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:21:13-163
+53            android:exported="true"
+53-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:18:13-36
+54            android:hardwareAccelerated="true"
+54-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:22:13-47
+55            android:launchMode="singleTop"
+55-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:19:13-43
+56            android:theme="@style/LaunchTheme"
+56-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:20:13-47
+57            android:windowSoftInputMode="adjustResize" >
+57-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:23:13-55
+58
+59            <!--
+60                 Specifies an Android theme to apply to this Activity as soon as
+61                 the Android process has started. This theme is visible to the user
+62                 while the Flutter UI initializes. After that, this theme continues
+63                 to determine the Window background behind the Flutter UI.
+64            -->
+65            <meta-data
+65-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:30:13-33:17
+66                android:name="io.flutter.embedding.android.NormalTheme"
+66-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:31:15-70
+67                android:resource="@style/NormalTheme" />
+67-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:32:15-52
+68
+69            <intent-filter>
+69-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:34:13-37:29
+70                <action android:name="android.intent.action.MAIN" />
+70-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:35:17-68
+70-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:35:25-66
+71
+72                <category android:name="android.intent.category.LAUNCHER" />
+72-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:36:17-76
+72-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:36:27-74
+73            </intent-filter>
+74            <intent-filter>
+74-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:34:13-37:29
+75                <action android:name="android.intent.action.MAIN" />
+75-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:35:17-68
+75-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:35:25-66
+76
+77                <category android:name="android.intent.category.LAUNCHER" />
+77-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:36:17-76
+77-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:36:27-74
+78            </intent-filter>
+79            <intent-filter>
+79-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:43:13-46:29
+80                <action android:name="FLUTTER_NOTIFICATION_CLICK" />
+80-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:44:17-69
+80-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:44:25-66
+81
+82                <category android:name="android.intent.category.DEFAULT" />
+82-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:45:17-76
+82-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:45:27-73
+83            </intent-filter>
+84        </activity>
+85        <!--
+86             Don't delete the meta-data below.
+87             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+88        -->
+89        <meta-data
+89-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:51:9-53:33
+90            android:name="flutterEmbedding"
+90-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:52:13-44
+91            android:value="2" />
+91-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:53:13-30
+92        <meta-data
+92-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:55:8-56:54
+93            android:name="com.google.firebase.messaging.default_notification_channel_id"
+93-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:55:19-95
+94            android:value="high_importance_channel" />
+94-->D:\OneBitNet\android\app\src\main\AndroidManifest.xml:56:12-51
+95
+96        <service
+96-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-19:72
+97            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingBackgroundService"
+97-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-107
+98            android:exported="false"
+98-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+99            android:permission="android.permission.BIND_JOB_SERVICE" />
+99-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:19:13-69
+100        <service
+100-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:20:9-26:19
+101            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingService"
+101-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-97
+102            android:exported="false" >
+102-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:22:13-37
+103            <intent-filter>
+103-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+104                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+104-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+104-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+105            </intent-filter>
+106        </service>
+107
+108        <receiver
+108-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:28:9-35:20
+109            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingReceiver"
+109-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:29:13-98
+110            android:exported="true"
+110-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:30:13-36
+111            android:permission="com.google.android.c2dm.permission.SEND" >
+111-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:31:13-73
+112            <intent-filter>
+112-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+113                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+113-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+113-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+114            </intent-filter>
+115        </receiver>
+116
+117        <service
+117-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:37:9-41:19
+118            android:name="com.google.firebase.components.ComponentDiscoveryService"
+118-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:37:18-89
+119            android:directBootAware="true"
+119-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:34:13-43
+120            android:exported="false" >
+120-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:54:13-37
+121            <meta-data
+121-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:38:13-40:85
+122                android:name="com.google.firebase.components:io.flutter.plugins.firebase.messaging.FlutterFirebaseAppRegistrar"
+122-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:39:17-128
+123                android:value="com.google.firebase.components.ComponentRegistrar" />
+123-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:40:17-82
+124            <meta-data
+124-->[:firebase_core] D:\OneBitNet\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-13:85
+125                android:name="com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseCoreRegistrar"
+125-->[:firebase_core] D:\OneBitNet\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:12:17-124
+126                android:value="com.google.firebase.components.ComponentRegistrar" />
+126-->[:firebase_core] D:\OneBitNet\build\firebase_core\intermediates\merged_manifest\release\AndroidManifest.xml:13:17-82
+127            <meta-data
+127-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:55:13-57:85
+128                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+128-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:56:17-119
+129                android:value="com.google.firebase.components.ComponentRegistrar" />
+129-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:57:17-82
+130            <meta-data
+130-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Lenovo\.gradle\caches\transforms-3\6f3fece9de851d74f70940ad42e8648a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:27:13-29:85
+131                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+131-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Lenovo\.gradle\caches\transforms-3\6f3fece9de851d74f70940ad42e8648a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:28:17-115
+132                android:value="com.google.firebase.components.ComponentRegistrar" />
+132-->[com.google.firebase:firebase-datatransport:18.1.7] C:\Users\Lenovo\.gradle\caches\transforms-3\6f3fece9de851d74f70940ad42e8648a\transformed\jetified-firebase-datatransport-18.1.7\AndroidManifest.xml:29:17-82
+133            <meta-data
+133-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\8a6b71d15052a8a80b5cd95fa8bbb945\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:32:13-34:85
+134                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+134-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\8a6b71d15052a8a80b5cd95fa8bbb945\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:33:17-96
+135                android:value="com.google.firebase.components.ComponentRegistrar" />
+135-->[com.google.firebase:firebase-iid:21.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\8a6b71d15052a8a80b5cd95fa8bbb945\transformed\jetified-firebase-iid-21.1.0\AndroidManifest.xml:34:17-82
+136            <meta-data
+136-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\98f6687537bbe22bf019b907833551a3\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:31:13-33:85
+137                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+137-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\98f6687537bbe22bf019b907833551a3\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:32:17-139
+138                android:value="com.google.firebase.components.ComponentRegistrar" />
+138-->[com.google.android.gms:play-services-measurement-api:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\98f6687537bbe22bf019b907833551a3\transformed\jetified-play-services-measurement-api-21.2.0\AndroidManifest.xml:33:17-82
+139            <meta-data
+139-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\0bb82bd9c5458692a932f98364fa8622\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:17:13-19:85
+140                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+140-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\0bb82bd9c5458692a932f98364fa8622\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:18:17-127
+141                android:value="com.google.firebase.components.ComponentRegistrar" />
+141-->[com.google.firebase:firebase-installations:17.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\0bb82bd9c5458692a932f98364fa8622\transformed\jetified-firebase-installations-17.1.0\AndroidManifest.xml:19:17-82
+142        </service>
+143
+144        <provider
+144-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:43:9-47:38
+145            android:name="io.flutter.plugins.firebase.messaging.FlutterFirebaseMessagingInitProvider"
+145-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:44:13-102
+146            android:authorities="com.onebitnet.onebitnet.flutterfirebasemessaginginitprovider"
+146-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:45:13-88
+147            android:exported="false"
+147-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:46:13-37
+148            android:initOrder="99" />
+148-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:47:13-35
+149        <provider
+149-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+150            android:name="io.flutter.plugins.imagepicker.ImagePickerFileProvider"
+150-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-82
+151            android:authorities="com.onebitnet.onebitnet.flutter.image_provider"
+151-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+152            android:exported="false"
+152-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+153            android:grantUriPermissions="true" >
+153-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+154            <meta-data
+154-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:75
+155                android:name="android.support.FILE_PROVIDER_PATHS"
+155-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+156                android:resource="@xml/flutter_image_picker_file_paths" />
+156-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-72
+157        </provider>
+158
+159        <receiver
+159-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:16:9-18:40
+160            android:name="com.dexterous.flutterlocalnotifications.ActionBroadcastReceiver"
+160-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:17:13-91
+161            android:exported="false" />
+161-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:18:13-37
+162        <receiver
+162-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:19:9-21:40
+163            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+163-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:20:13-97
+164            android:exported="false" />
+164-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:21:13-37
+165        <receiver
+165-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:22:9-31:20
+166            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+166-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-101
+167            android:exported="false" >
+167-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:24:13-37
+168            <intent-filter>
+168-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:25:13-30:29
+169                <action android:name="android.intent.action.BOOT_COMPLETED" />
+169-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:17-79
+169-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:26:25-76
+170                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+170-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:17-84
+170-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:27:25-81
+171                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+171-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:17-82
+171-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:28:25-79
+172                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+172-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:17-82
+172-->[:flutter_local_notifications] D:\OneBitNet\build\flutter_local_notifications\intermediates\merged_manifest\release\AndroidManifest.xml:29:25-79
+173            </intent-filter>
+174        </receiver>
+175
+176        <activity
+176-->[:url_launcher_android] D:\OneBitNet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-13:74
+177            android:name="io.flutter.plugins.urllauncher.WebViewActivity"
+177-->[:url_launcher_android] D:\OneBitNet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-74
+178            android:exported="false"
+178-->[:url_launcher_android] D:\OneBitNet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-37
+179            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+179-->[:url_launcher_android] D:\OneBitNet\build\url_launcher_android\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-71
+180
+181        <provider
+181-->[:share_plus] D:\OneBitNet\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:10:9-18:20
+182            android:name="dev.fluttercommunity.plus.share.ShareFileProvider"
+182-->[:share_plus] D:\OneBitNet\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:11:13-77
+183            android:authorities="com.onebitnet.onebitnet.flutter.share_provider"
+183-->[:share_plus] D:\OneBitNet\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:12:13-74
+184            android:exported="false"
+184-->[:share_plus] D:\OneBitNet\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:13:13-37
+185            android:grantUriPermissions="true" >
+185-->[:share_plus] D:\OneBitNet\build\share_plus\intermediates\merged_manifest\release\AndroidManifest.xml:14:13-47
+186            <meta-data
+186-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:15:13-17:75
+187                android:name="android.support.FILE_PROVIDER_PATHS"
+187-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:16:17-67
+188                android:resource="@xml/flutter_share_file_paths" />
+188-->[:image_picker_android] D:\OneBitNet\build\image_picker_android\intermediates\merged_manifest\release\AndroidManifest.xml:17:17-72
+189        </provider>
+190
+191        <uses-library
+191-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:25:9-27:40
+192            android:name="androidx.window.extensions"
+192-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:26:13-54
+193            android:required="false" />
+193-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:27:13-37
+194        <uses-library
+194-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:28:9-30:40
+195            android:name="androidx.window.sidecar"
+195-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:29:13-51
+196            android:required="false" />
+196-->[androidx.window:window:1.0.0-beta04] C:\Users\Lenovo\.gradle\caches\transforms-3\170caafd7b296028902f028b645ea7a7\transformed\jetified-window-1.0.0-beta04\AndroidManifest.xml:30:13-37
+197
+198        <receiver
+198-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:31:9-38:20
+199            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+199-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:32:13-78
+200            android:exported="true"
+200-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:33:13-36
+201            android:permission="com.google.android.c2dm.permission.SEND" >
+201-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:34:13-73
+202            <intent-filter>
+202-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:32:13-34:29
+203                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+203-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:17-81
+203-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:33:25-78
+204            </intent-filter>
+205        </receiver>
+206        <!--
+207             FirebaseMessagingService performs security checks at runtime,
+208             but set to not exported to explicitly avoid allowing another app to call it.
+209        -->
+210        <service
+210-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:44:9-51:19
+211            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+211-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:45:13-82
+212            android:directBootAware="true"
+212-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:46:13-43
+213            android:exported="false" >
+213-->[com.google.firebase:firebase-messaging:23.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\a5b4d8ca1e70a80f9a75d04af0784548\transformed\jetified-firebase-messaging-23.1.0\AndroidManifest.xml:47:13-37
+214            <intent-filter android:priority="-500" >
+214-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:23:13-25:29
+215                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+215-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:17-78
+215-->[:firebase_messaging] D:\OneBitNet\build\firebase_messaging\intermediates\merged_manifest\release\AndroidManifest.xml:24:25-75
+216            </intent-filter>
+217        </service>
+218        <service
+218-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:28:9-34:19
+219            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+219-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:29:13-103
+220            android:exported="false" >
+220-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:30:13-37
+221            <meta-data
+221-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:31:13-33:39
+222                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+222-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:32:17-94
+223                android:value="cct" />
+223-->[com.google.android.datatransport:transport-backend-cct:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\a83c01f6105ee2a378ea592ce3498fcd\transformed\jetified-transport-backend-cct-3.1.8\AndroidManifest.xml:33:17-36
+224        </service>
+225        <service
+225-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:26:9-30:19
+226            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+226-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:27:13-117
+227            android:exported="false"
+227-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:28:13-37
+228            android:permission="android.permission.BIND_JOB_SERVICE" >
+228-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:29:13-69
+229        </service>
+230
+231        <receiver
+231-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:32:9-34:40
+232            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+232-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:33:13-132
+233            android:exported="false" />
+233-->[com.google.android.datatransport:transport-runtime:3.1.8] C:\Users\Lenovo\.gradle\caches\transforms-3\69cc8bddadb26be51aafa3946e94aae6\transformed\jetified-transport-runtime-3.1.8\AndroidManifest.xml:34:13-37
+234
+235        <provider
+235-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:25:9-30:39
+236            android:name="com.google.firebase.provider.FirebaseInitProvider"
+236-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:26:13-77
+237            android:authorities="com.onebitnet.onebitnet.firebaseinitprovider"
+237-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:27:13-72
+238            android:directBootAware="true"
+238-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:28:13-43
+239            android:exported="false"
+239-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:29:13-37
+240            android:initOrder="100" />
+240-->[com.google.firebase:firebase-common:20.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\ab5242bc02c669629addde5ef9ba21ea\transformed\jetified-firebase-common-20.2.0\AndroidManifest.xml:30:13-36
+241
+242        <receiver
+242-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:29:9-33:20
+243            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+243-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:30:13-85
+244            android:enabled="true"
+244-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:31:13-35
+245            android:exported="false" >
+245-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:32:13-37
+246        </receiver>
+247
+248        <service
+248-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:35:9-38:40
+249            android:name="com.google.android.gms.measurement.AppMeasurementService"
+249-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:36:13-84
+250            android:enabled="true"
+250-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:37:13-35
+251            android:exported="false" />
+251-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:38:13-37
+252        <service
+252-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:39:9-43:72
+253            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+253-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:40:13-87
+254            android:enabled="true"
+254-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:41:13-35
+255            android:exported="false"
+255-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:42:13-37
+256            android:permission="android.permission.BIND_JOB_SERVICE" />
+256-->[com.google.android.gms:play-services-measurement:21.2.0] C:\Users\Lenovo\.gradle\caches\transforms-3\dfec690101bca8dae28abc430ee15984\transformed\jetified-play-services-measurement-21.2.0\AndroidManifest.xml:43:13-69
+257
+258        <activity
+258-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\87969bd0453e210abd7b5ff2e0494bf4\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:9-22:45
+259            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+259-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\87969bd0453e210abd7b5ff2e0494bf4\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:20:19-85
+260            android:exported="false"
+260-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\87969bd0453e210abd7b5ff2e0494bf4\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:22:19-43
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+261-->[com.google.android.gms:play-services-base:18.0.1] C:\Users\Lenovo\.gradle\caches\transforms-3\87969bd0453e210abd7b5ff2e0494bf4\transformed\jetified-play-services-base-18.0.1\AndroidManifest.xml:21:19-78
+262
+263        <meta-data
+263-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\170fd25f664a35a5eb12915b359be96d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:21:9-23:69
+264            android:name="com.google.android.gms.version"
+264-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\170fd25f664a35a5eb12915b359be96d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:22:13-58
+265            android:value="@integer/google_play_services_version" />
+265-->[com.google.android.gms:play-services-basement:18.1.0] C:\Users\Lenovo\.gradle\caches\transforms-3\170fd25f664a35a5eb12915b359be96d\transformed\jetified-play-services-basement-18.1.0\AndroidManifest.xml:23:13-66
+266    </application>
+267
+268</manifest>
